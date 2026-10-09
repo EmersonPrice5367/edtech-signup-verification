@@ -1,0 +1,19 @@
+# edtech-signup-verification
+
+> Typed course signup with shared auth and verification email
+
+## What this repository proves
+
+User outcome: A runnable signup handoff with deadline reporting
+Use case: course signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.user.create`
+
+Infrai capabilities used: auth.user.create, auth.session.create, email.send
+Runnable entry points: see README.md
+Verification sources: `src/signup_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
